@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgba(210, 180, 140, 0.397);
+            overflow-y: hidden;
+        }
+        .slider{
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh;
+            max-width: 845px;
+            margin: 60px auto;
+            border: 2px groove black;
+            border-radius: 20px;
+            box-shadow: 0 0 20px gray;
+        }
+        .slides{
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide{
+            width: 100%;
+            border-radius: 20px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            align-items: center;
+            gap: 487px;
+            width: 100%;
+            position: absolute;
+            top: 5px;
+        }
+        button{
+            width: 20%;
+            font-size: 30px;
+            padding: 8px 40px;
+            background-color: transparent;
+            box-shadow: 0 0 5px black;
+            color: darkcyan;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="../../Images/image2.jpg" alt="" class="slide">
+            <img src="../../Images/image7.jpg" alt="" class="slide">
+            <img src="../../Images/image5.jpg" alt="" class="slide">
+            <img src="../../Images/image6.jpg" alt="" class="slide">
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="prev"> ^ </button>
+        <button class="next"> v </button>
+    </div>
+
+    <script>
+       document.addEventListener("DOMContentLoaded",function() {
+            let slides = document.querySelector(".slides");
+            let sliderImage = document.querySelectorAll(".slide");
+            let prevButton = document.querySelector(".prev");
+            let nextButton = document.querySelector(".next");
+            console.log(sliderImage.length);
+
+            let currentIndex = 0;
+            function showSlide(index) {
+                slides.style.transform = `translateY(-${index*100}%)`;
+            }
+
+            // Previeous button
+            prevButton.addEventListener("click",function(){
+                currentIndex = currentIndex > 0 ? currentIndex - 1 : sliderImage.length - 1 ;
+                showSlide(currentIndex);
+                console.log(currentIndex);
+            })
+
+            // next button
+            nextButton.addEventListener("click",function(){
+                currentIndex = currentIndex < sliderImage.length - 1 ? currentIndex + 1 : 0;
+                showSlide(currentIndex);
+            })
+       })
+    </script>
+</body>
+</html>

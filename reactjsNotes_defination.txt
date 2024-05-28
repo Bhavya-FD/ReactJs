@@ -1,0 +1,54 @@
+*What is React ? 
+=>React is a JavaScript-based UI development library.
+      React is a JavaScript library that's used for building reactive websites.
+      It is library that allows developers to the creation of simple, fast, and scalable web applications.
+
+*Who created ReactJs?When was it Realesed?
+=> React was created by Jordan Walke, a software engineer at Meta.React was released first in 2013.
+
+*What is reactJs used for?
+=> It is to create User Interfaces (UI) which enhance the speed of programs.
+       It makes use of virtual DOM (JavaScript object), which enhances the app's efficiency.
+
+*Important Features of React.
+=> It supports server-side rendering.
+       It will make use of the virtual DOM rather than real DOM (Data Object Model).
+       It uses reusable or composable UI components for developing the view.
+
+*What are the limitations of React?
+=> React is not a full-blown framework as it is only a library.
+       Coding might become complex as it will make use of inline templating and JSX.
+
+*Differentiate between real DOM and virtual DOM?
+=> DOM stands for Document Object Model it is the structural representation of the
+       HTML Document. Real DOM is the actual structure represented in the User Interface while 
+       Virtual DOM is the memory representation of the same.
+
+*Why to Install node to work with ReactJs?
+=> nodejs :- It gives a Environment to work with javascript - using of node we can execute and run js files which provide npm & npx.
+      npm  :- node package manager - npm is a tool using which we can install packages.
+      NPM allows you to install and manage packages, or collections of code written by other developers, that can be easily reused in your own projects.
+      npx :- node package executer - using of npx we can execute packages
+
+*What is JSX?why it is used?
+=>JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+
+*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

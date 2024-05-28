@@ -1,8 +1,7 @@
-Working with ReactJs :
+* Working with ReactJs :
 
 step1 - Install NodeJs
-nodejs :- Environment of javascript - using of node we can execute and run js files.
-which provide npm & npx
+nodejs :- Environment of javascript - using of node we can execute and run js files which provide npm & npx
 
 npm  :- node package manager - npm is a tool using which we can install packages
 
@@ -17,13 +16,11 @@ node -v   : tells version of node js
 
 npm-v   : tells version of npm
 ------------------------------------------------------------------
-for react installation
+*react installation for project creation  (Traditional Method)
 
-npm install create-react-app                    // install in a folder
-
-npm install -g create-react-app               // install in a folder but works globally
----------------------------------------------------------------------
-for project creation  (Traditional Method)
+npm install create-react-app    	              // install in a folder
+	
+npm install -g create-react-app    	           // install in a folder but works globally
 
 npx create-react-app  <projectname>
 
@@ -31,7 +28,7 @@ cd projectname   (cd means change directory)
 
 npm start
 ---------------------------------------------------
-latest react project creation
+*latest react project creation : steps to create a new project using latest method
 
 npm create vite
 or
@@ -50,8 +47,7 @@ npm install
 npm run dev
 -----------------------------------------------------
 Create React App(CRA) :- It offers a modern build setup with no Configuration
-
-but it Increased development & buid time when the project size increases
+	but it Increased development & buid time when the project size increases
 
 Vite : it is next-Generation, forntend tool that focuses on speed & performence
 
@@ -62,7 +58,7 @@ It focuses on two major parts :
 SWC (Speedy Web Compiler)  :-  is an extensible Rust-based platform for the next generation of fast developer tools. It's used by tools like Next.js, Parcel etc.
 
 ------------------------------------------------------------------------------------------------------------------
-package.json  :Which main Configuration file of the project which contain install packages (dependency) name and version name
+package.json  : Which main Configuration file of the project which contain install packages (dependency) name and version name
 
 "dependencies": {
     "react": "^18.2.0",
@@ -104,12 +100,72 @@ export default function App(){
 	)
 }
 --------------------------------------------------------------------------------------
+index.html
+  |
+ V
+Main.jsx
+ 	=>App.jsx
+		=>rest of the Components(start with capitals)
 
+------------------------------------------------------------------------------
+State : State is a behaviour of Component
+	It is Mutable property(we can change it)
+	
+	for   car- color - black          at purchase
+	
+	         car - color - white         at delivery
+	
+	Here, we are changing state of car color
+-------------------------------------------------------------------------------
+Components : There are two types of Components
 
+	1) Function Component : easy to understand
+		in Function Component there is direct return jsx
+	
+	2) Class Component : It is complex to use - It is Inherited by Component class
+		Class Component have render() method which return jsx
 
+-------------------------------------------------------------------------------------
+Spread Operator : to Combine Multiple Array in single array, its called spread operator which is denoted by ...(dot operator/spread operator)
 
+var myArray = ["C","C++","ReactJs","Python"]
+console.log(myArray);            //output : ['C', 'C++', 'ReactJs', 'Python']
+var newArray = [...myArray]
+console.log(newArray);              //output : ['C', 'C++', 'ReactJs', 'Python']
+var newArray = [...myArray,"MernStack"]
+console.log(newArray);                  //output : ['C', 'C++', 'ReactJs', 'Python', 'MernStack']
 
+------------------------------------------------------------------------
+props : property of Component
 
+	using of props we can data from Parent Component to Child Component.
+
+	props are immutable (we can't change its value)
+
+	<ChildComponent key = "value" />
+-------------------------------------------------------------------------
+	Hooks
+Hook is a Special function. with the help of hook function we can manage many state of function component and manage lifecycle of function component.
+
+	There are many popular hooks available  for example  : useState() , useEffect() , useContext() and many more....
+
+---------------------------------------------------------------------------------------------
+useEffect  : useEffect is a most popular hook function.
+	using of useEffect we can control side effect of function component.
+	
+	for example : api fetching , render specific code when specific event occur
+
+ 	Syntax : 
+		useEffect(callback,dependencies)
+
+	when we don't pass any dependencies it will run useEffect every time.
+---------------------------------------------------------------------------------------------
+useRef  : useRef is one of the most popular hook in ReactJs.
+	
+	It refer a specific Conponent.
+	e.g.   on button click we can focus on input box
+--------------------------------------------------------------------------------------
+	
 
 
 

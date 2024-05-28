@@ -1,0 +1,7 @@
+useState is a React Hook that lets you add a state variable to your component.
+
+Syntax : const [state, setState] = useState(initialState)
+
+initialState: The value you want the state to be initially. It can be a value of any type.
+
+We have to import useState at the top of our component to declare a state variable.

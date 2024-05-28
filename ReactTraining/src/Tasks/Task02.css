@@ -1,0 +1,61 @@
+.container{
+    background: url(../../Images/background.jpg);
+    height: 100vh;
+}
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+    gap: 50px;
+    margin-left: 50px;
+}
+.textHeading{
+    font-family:'Courier New', Courier, monospace;
+    color: darkmagenta;
+    font-size: 50px;
+    padding-top: 20px;
+    text-shadow: 0 0 10px purple;
+    text-align: center;
+}
+.inputDiv{
+    height: 180px;
+    width: 520px;
+    border: 2px groove rgba(172, 255, 47, 0.668);
+    box-shadow: 8px 8px 5px rgba(75, 124, 2, 0.7);
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    background: rgba(169, 245, 236, 0.623);
+}
+.showData{
+    height: 180px;
+    width: 520px;
+    padding: 20px;
+    overflow: hidden;
+    font-size: 25px;
+    border: 2px groove green;
+    box-shadow: 8px 8px 5px rgba(0, 128, 0, 0.619);
+    border-radius: 20px;
+    background: rgba(248, 169, 185, 0.719);
+}
+.manager{
+    margin-left: 100px;
+}
+.button{
+    background: cadetblue;
+    border: 2px inset cadetblue;
+    outline: 2px outset cadetblue;
+    padding: 15px 25px;
+    color: wheat;
+    text-shadow: 0 0 5px rgb(255, 186, 59);
+    margin: 2px 20px;
+}
+.button:hover{
+    background: rgba(117, 193, 194, 0.875);
+    border: 3px inset cadetblue;
+    padding: 16px 26px;
+    color: rgb(70, 50, 13);
+    font-weight: 700;
+    margin: 0 15px;
+    box-shadow: 0 0 10px black;
+}

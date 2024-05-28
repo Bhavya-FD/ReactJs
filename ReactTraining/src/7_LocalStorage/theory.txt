@@ -1,0 +1,35 @@
+LocalStorage : It is one kind of Database which is available in Browser
+
+    We can store data in key & value format
+
+    if we want to store data in localstorage we can use below method
+
+    localstorage.setItem("key",value)
+
+    if we want to retrive data from localstorage we can use below method
+
+    localstorage.getItem("key")
+--------------------------------------------------
+
+Session Storage Vs Local Storage
+
+Session Storage =>  Session Storage keep value in browser or tab memory whenever we close tab 
+----------------    or browser it will destroy session memory.
+
+                    This is temporary storage Specifier.
+
+                    Capicity of storage specifier 5-10 MB - depends on browser
+
+            Syntax : sessionStorage.setItem("key",value);
+
+                    sessionStorage.getItem("key"); 
+
+Local Storage => It keeps Data for long time
+--------------   
+                It does not destroy data on closing browser or tab.
+
+                Capicity of this storage specifier 5-10 MB - depend on browser
+
+                localStorage mainly used for Theme Setting etc...
+
+Both data can be access by Specific port or Application.
