@@ -1,0 +1,33 @@
+
+For install react routing :
+	       =>   npm i react-router-dom
+-----------------------------------------------
+useNavigate() : useNavigate is one of the most important hook which is used to create 
+              Dynamic Navigation in single page Application.
+
+              which is provided by react-router-dom.
+
+              in simple, programatically we can control navigation between component.
+
+
+        navigate(-1) : backward one step back
+        navigate(1) : forward one step next
+
+      Disable back button on tab and did not go back to the last tab.
+        navigate('path', {replace : true})
+----------------------------------------------------------
+
+useLocation() : useLocation is one of the best hook which is provided by react-router-dom.
+
+            It is used to handle browser path location.
+
+            We can access browser path, search name (?name="AAA") , hash (#section), state , etc...
+
+            using of useLocation object we can access below things :
+
+              location.pathname
+              location.search
+              location.hash
+              location.state
+---------------------------------------------              
+

@@ -1,0 +1,119 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#myContainer{
+    height: 110vh;
+    background: url(../../Images/pizza_bg2.jpg) no-repeat center center/cover;
+    padding: 0 0 500px 0;
+    position: relative;
+}
+#myNavBar{
+    width: 1302px;
+    height: 80px;
+    position: fixed;
+    margin-left: 0;
+    background:rgba(231, 222, 221, 0.597);
+}
+#logo img{
+    height: 80px;
+    width: 160px;
+}
+#card{
+    background: rgba(240, 248, 255, 0.873);
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    padding: 20px 70px;
+    position: absolute;
+    top: 440px;
+    left: 420px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#card label{
+    padding-left: 20px;
+}
+#card #nameInput{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 25px;
+    border-radius: 8px;
+    margin-top: 12px;
+    text-transform: capitalize;
+    font-family:  'Courier New', Courier, monospace;
+}
+#card input:focus{
+    background-color: rgba(144, 187, 147, 0.737);
+    color: rgb(12, 13, 12);
+    font-weight: 600;
+    box-shadow:  0 0 15px rgb(249, 167, 167);
+}
+#card #inputNum{
+    border: none;
+    outline: none;
+    padding: 10px 0 10px 5px;
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 12px 50px;
+}
+#card button{
+    background: linear-gradient(50deg,rgba(235, 187, 182, 0.597),crimson);
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    padding: 8px 35px;
+}
+#card button:hover{
+    box-shadow: 0 0 5px black;
+}
+/* FlexCards */
+#mySection{
+    background: url(../../Images/wooden_bcackground.jpg);
+}
+#subSection{
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.831),rgba(222, 184, 135, 0.783),rgba(0, 0, 0, 0.75));
+    padding: 180px 30px 50px 30px;
+}
+#offerCards{
+    text-align: center;
+}
+#offerCards h2{
+    color: rgb(166, 3, 74);
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgb(154, 217, 240);
+}
+#offers{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+div[class*=flexCard]{
+    padding: 18px;
+    font-size: 30px;
+    border-radius: 20px;
+    color: rgb(50, 1, 50);
+    background: linear-gradient(45deg,#daf9a8b6 50%,rgb(249, 157, 249));
+}
+#billCard{
+    background: url(../../Images/pizza_logo3.png)center center/contain;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    margin: 50px auto;
+}
+#billcard2{
+    height: inherit;
+    width: inherit;
+    border-radius: 10px;
+    padding: 25px;
+    background: rgba(246, 211, 146, 0.595);
+    
+}
+#billcard2 h3,h4{
+    color: rgb(3, 98, 88);
+}

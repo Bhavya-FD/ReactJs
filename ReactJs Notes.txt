@@ -165,7 +165,37 @@ useRef  : useRef is one of the most popular hook in ReactJs.
 	It refer a specific Conponent.
 	e.g.   on button click we can focus on input box
 --------------------------------------------------------------------------------------
-	
+UseContext : manage globally state
+
+			it Content two property : 
+
+			createContext() : using of createContext we can create context globally
+
+			useContext(contextName) : we can use specific context by any Component
+
+			context.provider : which allow specific Component to specific context
+----------------------------------------------------------------------------------
+Install ReactStrap for Styling in reactJs : 
+
+	npm install reactstrap react react-dom
+
+Include Css link : 
+
+	<head>
+ 	      <link   rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"/>
+	</head>
+
+--------------------------------------------------------------------------------
+Install Material UI for Styling in ReactJs : 
+
+	npm install @mui/material @emotion/react @emotion/styled
+
+----------------------------------------------------------------------
+Install Material UI icons in ReactJs : 
+
+	npm install @mui/icons-material
+
+
 
 
 

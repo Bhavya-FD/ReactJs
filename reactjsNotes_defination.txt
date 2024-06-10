@@ -7,7 +7,7 @@
 => React was created by Jordan Walke, a software engineer at Meta.React was released first in 2013.
 
 *What is reactJs used for?
-=> It is to create User Interfaces (UI) which enhance the speed of programs.
+=> It is used to create User Interfaces (UI) which enhance the speed of programs.
        It makes use of virtual DOM (JavaScript object), which enhances the app's efficiency.
 
 *Important Features of React.
